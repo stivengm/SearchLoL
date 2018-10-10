@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../../components/navbar/navbar.component';
+// import { appRotes } from '../../app.module';
 
 
 @Component({
