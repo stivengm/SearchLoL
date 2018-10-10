@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  profileSearchig = '';
   nameProfile = '';
   profile = {
     "profileIconId": 1588,
@@ -20,7 +21,14 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  
   }
+
+  searchProfile() {
+    var select = document.getElementById('searchProfile');
+    // value = select.value
+  }
+
 
   profiles() {
     console.log(this.profile);
