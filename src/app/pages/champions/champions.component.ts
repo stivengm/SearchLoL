@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  selector: 'app-champions',
+  templateUrl: './champions.component.html',
+  styleUrls: ['./champions.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class ChampionsComponent implements OnInit {
 
-  nameProfile = '';
   profile = {
     "profileIconId": 1588,
     "name": "XGameGamePlay0X",
@@ -20,11 +19,12 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    console.log(this.profile.name);
   }
 
   profiles() {
     console.log(this.profile);
-    this.nameProfile = this.profile.name 
+    debugger;
   }
-  
+
 }
